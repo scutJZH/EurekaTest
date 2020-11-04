@@ -1,0 +1,17 @@
+server:
+  port: 7001
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    #    register-with-eureka: 是否将自己注册到Eureka Server，默认为true，单节点配置为false，因为自己就是Eureka Server，不用自己注册自己
+    #    fetch-registry: 是否从Eureka Server获取注册信息，默认为true，如果为单节点，则不需要同步其他节点数据，配置为false
+    # 配置服务注册中心的url，若多个节点用英文逗号隔开
+    service-url:
+      defaultZone: http://127.0.0.1:7000/eureka,http://127.0.0.1:7001/eureka
+
+spring:
+  application:
+    # 注册中心中的服务名称
+    name: enreka-server-7001
