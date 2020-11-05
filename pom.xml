@@ -12,6 +12,8 @@
         <module>Eureka-Client-8000</module>
         <module>Eureka-Server-7000</module>
         <module>Eureka-Server-7001</module>
+        <module>Eureka-Client-8001</module>
+        <module>Eureka-Client-80</module>
     </modules>
 
     <parent>
